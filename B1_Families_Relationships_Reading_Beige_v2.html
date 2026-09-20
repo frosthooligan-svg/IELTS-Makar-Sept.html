@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 Reading Lab — Families & Relationships</title>
+<style>
+:root{
+  --bg:#f1eadf;--card:#fffaf2;--paper:#fffdf8;--ink:#463e36;
+  --muted:#81766a;--accent:#9b8066;--soft:#eee1d0;--line:#ddcfbd;
+  --good:#70866d;--bad:#aa6d61;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:1050px;margin:auto;padding:18px 16px 60px}
+.hero,.section{background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:0 8px 28px rgba(70,55,40,.07)}
+.hero{padding:40px 32px;margin-bottom:14px}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-size:12px;font-weight:800}
+h1,h2{font-family:Georgia,serif;font-weight:500}
+h1{font-size:clamp(38px,7vw,64px);line-height:1.03;margin:10px 0}
+h2{font-size:29px;line-height:1.15;margin:0}
+h3{font-size:19px;margin:22px 0 8px}
+p{color:var(--muted)}
+.nav{position:sticky;top:0;z-index:10;display:flex;gap:7px;overflow-x:auto;padding:9px 2px;background:rgba(241,234,223,.94);backdrop-filter:blur(10px);margin:0 0 8px}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
+.section{padding:28px;margin:14px 0;scroll-margin-top:70px}
+.head{display:flex;gap:13px;align-items:flex-start;margin-bottom:18px}
+.num{min-width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:13px;font-weight:800}
+.rule{background:var(--soft);border:1px solid var(--line);border-left:4px solid var(--accent);padding:15px 17px;border-radius:15px;margin:15px 0 20px}
+.rule b:first-child{letter-spacing:.08em;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:11px}
+.card,.prompt{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:14px}
+.word{font-weight:800;font-size:17px}
+.def{color:var(--muted);font-size:14px}
+.translation{font-size:13px;color:var(--accent)}
+select,input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px}
+textarea{min-height:100px;resize:vertical}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.reading{background:#eee4d6;border-radius:18px;padding:20px 22px}
+.reading h4{margin:18px 0 4px;font-family:Georgia,serif;font-size:20px}
+.reading h4:first-child{margin-top:0}
+.item{padding:13px 0;border-bottom:1px solid var(--line)}
+button{border:0;border-radius:999px;background:var(--ink);color:#fff;padding:11px 18px;font:inherit;font-weight:750;cursor:pointer;margin-top:12px}
+.feedback{font-weight:800;margin-top:10px}
+.good{color:var(--good)}
+.options label{display:block;padding:5px 0}
+.options input{width:auto}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:650px){.hero{padding:30px 20px}.section{padding:22px 18px}.match{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+<div class="eyebrow">B1 Reading · Unit 1</div>
+<h1>Families &<br>Relationships</h1>
+<p>A fresh reading lesson inspired by the structure of your textbook page: headings, five short sections, vocabulary work and discussion.</p>
+</header>
+
+<nav class="nav">
+<a href="#vocab">01 Vocabulary</a><a href="#match">02 Headings</a><a href="#reading">03 Reading</a>
+<a href="#words">04 Vocabulary in context</a><a href="#check">05 Check</a><a href="#speak">06 Speaking</a>
+</nav>
+
+<section class="section" id="vocab">
+<div class="head"><div class="num">01</div><div><h2>Vocabulary before reading</h2><p>Learn the key words you will need for the text.</p></div></div>
+<div class="rule"><b>MINI MAP</b><br>Before reading a longer text, learn the words that carry the main ideas. Don't try to translate every word — focus on words that help you understand the argument.</div>
+<div class="grid">
+<div class="card"><div class="word">household</div><div class="translation">домохозяйство, люди, живущие вместе</div><div class="def">the people who live together in one home</div></div>
+<div class="card"><div class="word">nuclear family</div><div class="translation">нуклеарная семья</div><div class="def">parents and their children living as a family unit</div></div>
+<div class="card"><div class="word">extended family</div><div class="translation">расширенная семья</div><div class="def">family including grandparents, aunts, uncles, etc.</div></div>
+<div class="card"><div class="word">conventional</div><div class="translation">традиционный</div><div class="def">following a generally accepted traditional pattern</div></div>
+<div class="card"><div class="word">cohabitation</div><div class="translation">совместное проживание</div><div class="def">living together as a couple without being married</div></div>
+<div class="card"><div class="word">single-parent</div><div class="translation">с одним родителем</div><div class="def">a family with one parent raising the child or children</div></div>
+<div class="card"><div class="word">individualism</div><div class="translation">индивидуализм</div><div class="def">the idea that individual choice and independence are important</div></div>
+<div class="card"><div class="word">social expectations</div><div class="translation">общественные ожидания</div><div class="def">ideas about how people are expected to live or behave</div></div>
+<div class="card"><div class="word">adapt</div><div class="translation">адаптироваться</div><div class="def">to change in order to fit a new situation</div></div>
+<div class="card"><div class="word">decline</div><div class="translation">снижение, упадок</div><div class="def">a gradual reduction in number, importance or strength</div></div>
+<div class="card"><div class="word">stability</div><div class="translation">стабильность</div><div class="def">a state of being steady and unlikely to change suddenly</div></div>
+<div class="card"><div class="word">controversial</div><div class="translation">спорный</div><div class="def">causing disagreement or strong differences of opinion</div></div>
+</div>
+</section>
+
+<section class="section" id="match">
+<div class="head"><div class="num">02</div><div><h2>Match the headings</h2><p>There are five sections in the text and eight possible headings. Three headings are extra.</p></div></div>
+<div class="rule"><b>READING STRATEGY</b><br>Read the <b>first and last sentence</b> of each section first. Then choose the heading that describes the <b>main idea</b>, not one small detail.</div>
+<div class="grid">
+<div class="card"><b>A</b> The changing role of grandparents</div>
+<div class="card"><b>B</b> Why the traditional family is no longer the only model</div>
+<div class="card"><b>C</b> Family life and personal freedom</div>
+<div class="card"><b>D</b> The family as a social institution</div>
+<div class="card"><b>E</b> How technology has changed family life</div>
+<div class="card"><b>F</b> Different ways of living together</div>
+<div class="card"><b>G</b> Arguments about the modern family</div>
+<div class="card"><b>H</b> The influence of advertising on parents</div>
+</div>
+<h3>Your answers</h3>
+<div class="match">
+<div>Section A <select id="ha"><option>Choose...</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+<div>Section B <select id="hb"><option>Choose...</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+<div>Section C <select id="hc"><option>Choose...</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+<div>Section D <select id="hd"><option>Choose...</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+<div>Section E <select id="he"><option>Choose...</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+</div>
+<button onclick="checkHeadings()">Check headings</button><div id="hf" class="feedback"></div>
+</section>
+
+<section class="section" id="reading">
+<div class="head"><div class="num">03</div><div><h2>Reading · Families in transition</h2><p>Read the five sections and match them with the headings above.</p></div></div>
+<div class="reading">
+<h4>Section A</h4>
+<p>For a long time, the family was viewed as one of the basic building blocks of society. It was expected to provide children with care, teach them social rules and offer adults a sense of belonging. In many countries, the model that received the most attention was the nuclear family: two parents and their children living together. This arrangement was often presented as a normal and stable foundation for family life.</p>
+
+<h4>Section B</h4>
+<p>Over recent decades, however, family life has become more varied. People may live with a partner without marrying, raise children alone, share a home with relatives or create a household with friends. In some societies, marriage happens later than it did in the past, while in others people choose not to marry at all. These developments do not mean that families have disappeared. Rather, the ways in which people organise their relationships have become more diverse.</p>
+
+<h4>Section C</h4>
+<p>One explanation for these changes is the growing importance of individual choice. Young adults often want to decide where to live, whether to marry and when to have children. Education, work and financial independence can give people more options than previous generations had. At the same time, traditional social expectations have not completely disappeared, so people may still feel pressure to follow a particular path. Modern family life therefore involves a constant balance between personal freedom and expectations from others.</p>
+
+<h4>Section D</h4>
+<p>Not everyone sees this transformation in the same way. Some people believe that greater choice allows families to adapt to real-life circumstances and can make relationships more equal. Others worry that less conventional arrangements may reduce stability or make it harder for children and adults to know what to expect from one another. The debate is especially strong when people discuss divorce, cohabitation and the responsibilities of parents. Much of the disagreement comes from different ideas about what a successful family should look like.</p>
+
+<h4>Section E</h4>
+<p>What seems clear is that there is no single family experience shared by everyone. Economic conditions, culture, age and personal values all influence the way people build their lives. The important question may therefore be less about whether one model is “right” and more about how families can provide care, security and support in different circumstances. As society continues to change, family relationships will probably continue to adapt with it.</p>
+</div>
+</section>
+
+<section class="section" id="words">
+<div class="head"><div class="num">04</div><div><h2>Vocabulary in context</h2><p>Complete the sentences using words from the reading.</p></div></div>
+<div class="rule"><b>MINI MAP</b><br>Don't look only at grammar. Read the whole sentence and identify the <b>meaning</b> you need.</div>
+<div class="item">1. A family with parents, children and grandparents living together may be part of an <input id="v1" placeholder="__________ family"></div>
+<div class="item">2. Living together without being married is called <input id="v2"></div>
+<div class="item">3. The people who share one home form a <input id="v3"></div>
+<div class="item">4. A family can <input id="v4"> when economic or social conditions change.</div>
+<div class="item">5. Some people value <input id="v5"> because they want to make their own decisions.</div>
+<div class="item">6. Divorce and cohabitation can be <input id="v6"> topics.</div>
+<button onclick="checkVocab()">Check vocabulary</button><div id="vf" class="feedback"></div>
+
+<h3>Word meaning match</h3>
+<div class="match">
+<div>1. decline <select id="d1"><option>Choose...</option><option>a gradual reduction</option><option>living together</option><option>steady condition</option><option>causing disagreement</option></select></div>
+<div>2. stability <select id="d2"><option>Choose...</option><option>a gradual reduction</option><option>living together</option><option>steady condition</option><option>causing disagreement</option></select></div>
+<div>3. controversial <select id="d3"><option>Choose...</option><option>a gradual reduction</option><option>living together</option><option>steady condition</option><option>causing disagreement</option></select></div>
+<div>4. cohabitation <select id="d4"><option>Choose...</option><option>a gradual reduction</option><option>living together</option><option>steady condition</option><option>causing disagreement</option></select></div>
+</div>
+<button onclick="checkMeanings()">Check meanings</button><div id="df" class="feedback"></div>
+</section>
+
+<section class="section" id="check">
+<div class="head"><div class="num">05</div><div><h2>Reading check</h2><p>Choose the statement that best reflects the text.</p></div></div>
+<div class="item"><b>1. The text mainly suggests that:</b><div class="options">
+<label><input type="radio" name="q1" value="a"> A traditional family is the only stable option.</label>
+<label><input type="radio" name="q1" value="b"> Family structures have become more varied and people have different views about this.</label>
+<label><input type="radio" name="q1" value="c"> Modern families no longer provide support.</label></div></div>
+<div class="item"><b>2. According to Section C, greater individual choice:</b><div class="options">
+<label><input type="radio" name="q2" value="a"> has completely removed social expectations.</label>
+<label><input type="radio" name="q2" value="b"> can give people more options but does not remove social pressure.</label>
+<label><input type="radio" name="q2" value="c"> has made marriage impossible for young adults.</label></div></div>
+<div class="item"><b>3. Section D focuses on:</b><div class="options">
+<label><input type="radio" name="q3" value="a"> different opinions about changes in family life.</label>
+<label><input type="radio" name="q3" value="b"> the history of grandparents.</label>
+<label><input type="radio" name="q3" value="c"> economic reasons for marriage.</label></div></div>
+<button onclick="checkReading()">Check</button><div id="rf" class="feedback"></div>
+</section>
+
+<section class="section" id="speak">
+<div class="head"><div class="num">06</div><div><h2>Speaking · Family today</h2><p>Move from reading to your own ideas.</p></div></div>
+<div class="rule"><b>SPEAKING MAP</b><br><b>Give an opinion → explain why → give an example → mention another point of view.</b><br>Useful phrases: <i>In my view… / One reason is… / For example… / However… / On the other hand…</i></div>
+<div class="grid">
+<div class="prompt"><b>1. What makes a family stable?</b><br>Choose three factors and explain your choices.</div>
+<div class="prompt"><b>2. Is the traditional family still important?</b><br>Give arguments for different perspectives.</div>
+<div class="prompt"><b>3. Why do people choose different family structures?</b><br>Talk about work, money, culture, personal values and relationships.</div>
+<div class="prompt"><b>4. Two-minute challenge</b><br>“Family life has become more diverse.” Discuss this statement and use at least <b>5 words</b> from today's vocabulary.</div>
+</div>
+<textarea placeholder="Optional: prepare your speaking notes here..."></textarea>
+</section>
+
+</div>
+<script>
+function checkHeadings(){
+ const ans={ha:"D",hb:"F",hc:"C",hd:"G",he:"B"};
+ let s=0;for(const k in ans)s+=(document.getElementById(k).value===ans[k]);
+ document.getElementById("hf").textContent=`Score: ${s}/5`;
+ document.getElementById("hf").className="feedback "+(s===5?"good":"");
+}
+function norm(x){return x.toLowerCase().trim().replace(/[.,!?]/g,"")}
+function checkVocab(){
+ const a=["extended","cohabitation","household","adapt","individualism","controversial"];
+ let s=0;a.forEach((x,i)=>s+=(norm(document.getElementById("v"+(i+1)).value).includes(x)));
+ document.getElementById("vf").textContent=`Score: ${s}/6`;
+}
+function checkMeanings(){
+ const a={d1:"a gradual reduction",d2:"steady condition",d3:"causing disagreement",d4:"living together"};
+ let s=0;for(const k in a)s+=(document.getElementById(k).value===a[k]);
+ document.getElementById("df").textContent=`Score: ${s}/4`;
+}
+function checkReading(){
+ const a=["b","b","a"];let s=0;
+ a.forEach((x,i)=>{let el=document.querySelector('input[name="q'+(i+1)+'"]:checked');s+=!!el&&el.value===x});
+ document.getElementById("rf").textContent=`Score: ${s}/3`;
+}
+</script>
+</body>
+</html>
